@@ -301,15 +301,12 @@ html{scroll-behavior:smooth}body{font-family:var(--fb);background:var(--bg-deep)
 <!-- FOOTER -->
 <footer class="footer"><div class="ct"><div class="footer-in">
   <a href="index.html" class="nav-logo" style="font-size:18px"><div class="nav-logo-icon" style="width:28px;height:28px;border-radius:8px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>PagePulse</a>
-  <ul class="footer-links"><li><a href="pricing.html">Tarifs</a></li><li><a href="mailto:contact@page-pulse.app">Contact</a></li></ul>
+  <ul class="footer-links"><li><a href="pricing.html">Tarifs</a></li><li><a href="legal.html">Mentions légales</a></li><li><a href="mailto:contact@page-pulse.app">Contact</a></li></ul>
   <span class="fc">&copy; 2026 PagePulse. Tous droits réservés.</span>
 </div></div></footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40)});
 const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('v')})},{threshold:.15,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
-setTimeout(()=>{const r=document.getElementById('scoreRing');if(r)r.classList.add('anim');document.querySelectorAll('.ax-fill').forEach(b=>{b.style.width=b.dataset.w})},600);
-</script>
-</body>
-</html>
+setTimeout(()=>{const r=document.getElementById(
