@@ -6,27 +6,17 @@
 <title>Merci ! — PagePulse</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 :root {
-  --bg-deep: #07080F;
-  --bg-card: #161B2E;
-  --border: #232940;
-  --border-light: #2E3550;
-  --accent-indigo: #818CF8;
-  --accent-cyan: #22D3EE;
-  --accent-green: #34D399;
+  --bg-deep: #07080F; --bg-card: #161B2E; --border: #232940; --border-light: #2E3550;
+  --accent-indigo: #818CF8; --accent-cyan: #22D3EE; --accent-green: #34D399;
   --gradient-main: linear-gradient(135deg, #6366F1, #8B5CF6, #06B6D4);
   --gradient-text: linear-gradient(135deg, #818CF8, #22D3EE);
-  --text-primary: #F1F5F9;
-  --text-secondary: #94A3B8;
-  --text-muted: #64748B;
-  --font-display: 'Outfit', sans-serif;
-  --font-body: 'Plus Jakarta Sans', sans-serif;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
+  --text-primary: #F1F5F9; --text-secondary: #94A3B8; --text-muted: #64748B;
+  --font-display: 'Outfit', sans-serif; --font-body: 'Plus Jakarta Sans', sans-serif;
+  --radius-md: 12px; --radius-lg: 16px; --radius-xl: 24px;
 }
 body {
   font-family: var(--font-body); background: var(--bg-deep);
@@ -36,23 +26,17 @@ body {
 }
 .bg-grid {
   position: fixed; inset: 0; z-index: 0; pointer-events: none;
-  background-image:
-    linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
+  background-image: linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
   background-size: 60px 60px;
 }
-
 .card {
-  position: relative; z-index: 1; max-width: 600px; width: 100%;
+  position: relative; z-index: 1; max-width: 620px; width: 100%;
   background: var(--bg-card); border: 1px solid var(--border);
   border-radius: var(--radius-xl); padding: 48px 40px; text-align: center;
   animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 .check-circle {
   width: 80px; height: 80px; border-radius: 50%;
   background: rgba(52,211,153,0.1); border: 2px solid var(--accent-green);
@@ -60,34 +44,18 @@ body {
   margin: 0 auto 28px;
   animation: scaleIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s both;
 }
-@keyframes scaleIn {
-  from { opacity: 0; transform: scale(0.5); }
-  to { opacity: 1; transform: scale(1); }
-}
+@keyframes scaleIn { from { opacity: 0; transform: scale(0.5); } to { opacity: 1; transform: scale(1); } }
 .check-circle svg { color: var(--accent-green); }
-
-h1 {
-  font-family: var(--font-display); font-size: 28px; font-weight: 700;
-  margin-bottom: 12px;
-}
-.subtitle {
-  font-size: 17px; color: var(--text-secondary); line-height: 1.7;
-  margin-bottom: 36px;
-}
+h1 { font-family: var(--font-display); font-size: 28px; font-weight: 700; margin-bottom: 12px; }
+.subtitle { font-size: 17px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 36px; }
 
 .steps-box {
   text-align: left; background: rgba(255,255,255,0.02);
   border: 1px solid var(--border); border-radius: var(--radius-lg);
-  padding: 28px; margin-bottom: 32px;
+  padding: 28px; margin-bottom: 28px;
 }
-.steps-title {
-  font-family: var(--font-display); font-size: 15px; font-weight: 600;
-  margin-bottom: 20px; color: var(--text-primary);
-}
-.step {
-  display: flex; align-items: flex-start; gap: 14px;
-  padding: 12px 0;
-}
+.steps-title { font-family: var(--font-display); font-size: 15px; font-weight: 600; margin-bottom: 20px; }
+.step { display: flex; align-items: flex-start; gap: 14px; padding: 12px 0; }
 .step + .step { border-top: 1px solid var(--border); }
 .step-num {
   width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
@@ -98,6 +66,27 @@ h1 {
 .step-text { font-size: 15px; color: var(--text-secondary); line-height: 1.6; }
 .step-text strong { color: var(--text-primary); }
 
+/* CTA to submit more audits */
+.submit-box {
+  padding: 24px; border-radius: var(--radius-lg);
+  background: rgba(99,102,241,0.06); border: 1px solid rgba(99,102,241,0.2);
+  margin-bottom: 28px;
+}
+.submit-box-title {
+  font-family: var(--font-display); font-size: 17px; font-weight: 700;
+  margin-bottom: 8px;
+}
+.submit-box p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px; }
+.btn-submit {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 28px; border-radius: var(--radius-md);
+  background: var(--gradient-main); color: white;
+  font-family: var(--font-body); font-size: 15px; font-weight: 600;
+  text-decoration: none; transition: all 0.3s;
+  box-shadow: 0 4px 20px rgba(99,102,241,0.3);
+}
+.btn-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(99,102,241,0.4); }
+
 .guarantee {
   display: flex; align-items: center; justify-content: center; gap: 8px;
   padding: 14px; border-radius: var(--radius-md);
@@ -106,25 +95,18 @@ h1 {
 }
 .guarantee svg { flex-shrink: 0; }
 
-.btn-home {
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 14px 28px; border-radius: var(--radius-md);
-  background: var(--gradient-main); color: white;
-  font-family: var(--font-body); font-size: 15px; font-weight: 600;
-  text-decoration: none; transition: all 0.3s;
-  box-shadow: 0 4px 20px rgba(99,102,241,0.3);
+.bookmark-note {
+  padding: 16px; border-radius: var(--radius-md);
+  background: rgba(251,191,36,0.06); border: 1px solid rgba(251,191,36,0.15);
+  font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px;
+  text-align: left;
 }
-.btn-home:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(99,102,241,0.4); }
+.bookmark-note strong { color: #FBBF24; }
 
-.footer-note {
-  margin-top: 24px; font-size: 13px; color: var(--text-muted);
-}
+.footer-note { margin-top: 24px; font-size: 13px; color: var(--text-muted); }
 .footer-note a { color: var(--accent-indigo); text-decoration: none; }
 
-@media (max-width: 600px) {
-  .card { padding: 32px 20px; }
-  h1 { font-size: 24px; }
-}
+@media (max-width: 600px) { .card { padding: 32px 20px; } h1 { font-size: 24px; } }
 </style>
 </head>
 <body>
@@ -139,22 +121,36 @@ h1 {
   </div>
 
   <h1>Paiement confirmé !</h1>
-  <p class="subtitle">Merci pour votre confiance. Votre audit CRO est entre de bonnes mains.</p>
+  <p class="subtitle">Merci pour votre confiance. Votre premier audit est en cours de traitement.</p>
 
   <div class="steps-box">
     <div class="steps-title">Voici la suite :</div>
     <div class="step">
       <div class="step-num">1</div>
-      <div class="step-text"><strong>Analyse en cours</strong> — Notre équipe lance l'audit de votre page dès réception (sous 10h en jours ouvrés).</div>
+      <div class="step-text"><strong>Votre premier audit est lancé</strong> — L'URL soumise au moment du paiement est en cours d'analyse. Vous recevrez le rapport par email sous 24h.</div>
     </div>
     <div class="step">
       <div class="step-num">2</div>
-      <div class="step-text"><strong>Rapport livré par email</strong> — Vous recevez votre audit complet (PDF) avec les scores sur 9 axes et les recommandations priorisées.</div>
+      <div class="step-text"><strong>Soumettez vos autres URLs</strong> — Utilisez le formulaire ci-dessous pour envoyer les pages que vous souhaitez auditer. Un formulaire = un audit.</div>
     </div>
     <div class="step">
       <div class="step-num">3</div>
-      <div class="step-text"><strong>Maquette HTML</strong> — Pour les offres Pro et Agency, une maquette optimisée de votre page est incluse.</div>
+      <div class="step-text"><strong>Recevez vos rapports par email</strong> — Chaque audit est livré en PDF avec scores visuels, réécritures concrètes et estimations d'impact.</div>
     </div>
+  </div>
+
+  <!-- CTA FORMULAIRE -->
+  <div class="submit-box">
+    <div class="submit-box-title">Soumettre une nouvelle URL</div>
+    <p>Vous avez des crédits restants ? Envoyez vos URLs une par une via le formulaire. Chaque soumission utilise 1 crédit.</p>
+    <a href="[TALLY_URL]" class="btn-submit" target="_blank">
+      Soumettre une URL à auditer
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+
+  <div class="bookmark-note">
+    <strong>Ajoutez cette page à vos favoris.</strong> C'est votre point d'accès pour soumettre de nouvelles URLs à auditer tant que vous avez des crédits disponibles.
   </div>
 
   <div class="guarantee">
@@ -163,11 +159,6 @@ h1 {
     </svg>
     Satisfait ou remboursé sous 14 jours — sans condition.
   </div>
-
-  <a href="https://page-pulse.app" class="btn-home">
-    Retour à l'accueil
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-  </a>
 
   <div class="footer-note">
     Une question ? Écrivez-nous à <a href="mailto:contact@page-pulse.app">contact@page-pulse.app</a>
