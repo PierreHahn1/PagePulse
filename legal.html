@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentions légales, CGV & Confidentialité — PagePulse</title>
+<meta name="description" content="Mentions légales, conditions générales de vente et politique de confidentialité de PagePulse.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#07080F;--bg-card:#161B2E;--border:#232940;--accent:#818CF8;--cyan:#22D3EE;--t1:#F1F5F9;--t2:#94A3B8;--t3:#64748B;--fd:'Outfit',sans-serif;--fb:'Plus Jakarta Sans',sans-serif;--r:12px}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--bg);color:var(--t1);line-height:1.7;-webkit-font-smoothing:antialiased}
+.bg-grid{position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(99,102,241,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(99,102,241,.03) 1px,transparent 1px);background-size:60px 60px}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:14px 0;background:rgba(7,8,15,.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(35,41,64,.5)}
+.nav-in{max-width:900px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;align-items:center;gap:10px;font-family:var(--fd);font-size:20px;font-weight:700;text-decoration:none;color:var(--t1)}
+.nav-logo-icon{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,#6366F1,#8B5CF6,#06B6D4);display:flex;align-items:center;justify-content:center}
+.nav-logo-icon svg{width:16px;height:16px}
+.nav-back{font-size:14px;color:var(--t3);text-decoration:none;display:flex;align-items:center;gap:6px;transition:color .2s}.nav-back:hover{color:var(--t2)}
+
+/* CONTENT */
+.container{max-width:800px;margin:0 auto;padding:100px 24px 60px;position:relative;z-index:1}
+.page-title{font-family:var(--fd);font-size:32px;font-weight:700;margin-bottom:12px}
+.page-subtitle{font-size:15px;color:var(--t3);margin-bottom:40px}
+
+/* TOC */
+.toc{padding:20px 24px;border-radius:var(--r);background:var(--bg-card);border:1px solid var(--border);margin-bottom:48px}
+.toc-title{font-family:var(--fd);font-size:14px;font-weight:600;margin-bottom:12px;color:var(--t2)}
+.toc a{display:block;font-size:14px;color:var(--accent);text-decoration:none;padding:4px 0;transition:color .2s}.toc a:hover{color:var(--cyan)}
+
+/* SECTIONS */
+.legal-section{margin-bottom:56px}
+.legal-section h2{font-family:var(--fd);font-size:22px;font-weight:700;margin-bottom:8px;padding-top:24px}
+.legal-section h3{font-family:var(--fd);font-size:17px;font-weight:600;margin-top:28px;margin-bottom:8px;color:var(--t1)}
+.legal-section p{font-size:15px;color:var(--t2);margin-bottom:12px}
+.legal-section ul{list-style:none;margin-bottom:12px}
+.legal-section ul li{font-size:15px;color:var(--t2);padding:4px 0 4px 18px;position:relative}
+.legal-section ul li::before{content:'';position:absolute;left:0;top:12px;width:6px;height:6px;border-radius:50%;background:var(--accent);opacity:.5}
+.legal-section strong{color:var(--t1)}
+.legal-divider{height:1px;background:var(--border);margin:48px 0}
+.legal-date{font-size:13px;color:var(--t3);font-style:italic}
+
+/* INFO BOX */
+.info-box{padding:16px 20px;border-radius:var(--r);background:rgba(129,140,248,.06);border:1px solid rgba(129,140,248,.15);margin:16px 0;font-size:14px;color:var(--t2)}
+.info-box strong{color:var(--accent)}
+
+/* TABLE */
+.legal-table{width:100%;border-collapse:collapse;margin:16px 0;border-radius:var(--r);overflow:hidden;border:1px solid var(--border)}
+.legal-table th,.legal-table td{padding:10px 16px;text-align:left;font-size:14px;border-bottom:1px solid var(--border)}
+.legal-table th{background:var(--bg-card);font-weight:600;font-size:13px;color:var(--t3);text-transform:uppercase;letter-spacing:.3px}
+.legal-table td{color:var(--t2)}
+.legal-table tr:last-child td{border-bottom:none}
+
+/* FOOTER */
+.footer{padding:32px 0;border-top:1px solid var(--border);text-align:center;font-size:13px;color:var(--t3)}
+.footer a{color:var(--accent);text-decoration:none}
+
+@media(max-width:600px){
+  .container{padding:90px 16px 40px}
+  .page-title{font-size:24px}
+  .legal-section h2{font-size:18px}
+}
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+
+<nav class="nav"><div class="nav-in">
+  <a href="index.html" class="nav-logo"><div class="nav-logo-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>PagePulse</a>
+  <a href="index.html" class="nav-back"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Retour au site</a>
+</div></nav>
+
+<div class="container">
+
+<h1 class="page-title">Informations légales</h1>
+<p class="page-subtitle">Dernière mise à jour : 25 mars 2026</p>
+
+<div class="toc">
+  <div class="toc-title">Sommaire</div>
+  <a href="#mentions">1. Mentions légales</a>
+  <a href="#cgv">2. Conditions générales de vente (CGV)</a>
+  <a href="#confidentialite">3. Politique de confidentialité</a>
+</div>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!-- MENTIONS LÉGALES -->
+<!-- ══════════════════════════════════════════════════ -->
+
+<section class="legal-section" id="mentions">
+<h2>1. Mentions légales</h2>
+
+<h3>Éditeur du site</h3>
+<p>Le site <strong>page-pulse.app</strong> (ci-après "PagePulse") est édité par :</p>
+<table class="legal-table">
+  <tr><td><strong>Raison sociale</strong></td><td>PH Digital — Pierre Hahn, Entrepreneur Individuel</td></tr>
+  <tr><td><strong>SIRET</strong></td><td>878 348 655 00027</td></tr>
+  <tr><td><strong>SIREN</strong></td><td>878 348 655</td></tr>
+  <tr><td><strong>Code NAF</strong></td><td>6202A — Conseil en systèmes et logiciels informatiques</td></tr>
+  <tr><td><strong>Adresse</strong></td><td>234 Avenue du Mondial de Rugby 2, 34070 Montpellier, France</td></tr>
+  <tr><td><strong>Email</strong></td><td>contact@page-pulse.app</td></tr>
+  <tr><td><strong>Statut</strong></td><td>Micro-entreprise (Profession Libérale Non Réglementée)</td></tr>
+</table>
+
+<div class="info-box"><strong>TVA :</strong> Non applicable, article 293 B du Code Général des Impôts (micro-entreprise en franchise de base de TVA).</div>
+
+<h3>Hébergement</h3>
+<p>Le site est hébergé par :</p>
+<table class="legal-table">
+  <tr><td><strong>Société</strong></td><td>Vercel Inc.</td></tr>
+  <tr><td><strong>Adresse</strong></td><td>440 N Barranca Ave #4133, Covina, CA 91723, États-Unis</td></tr>
+  <tr><td><strong>Site web</strong></td><td>vercel.com</td></tr>
+</table>
+
+<h3>Propriété intellectuelle</h3>
+<p>L'ensemble des contenus présents sur le site PagePulse (textes, graphismes, logo, structure, design) sont la propriété exclusive de PH Digital, sauf mention contraire. Toute reproduction, distribution ou utilisation sans autorisation écrite préalable est interdite.</p>
+
+<h3>Responsabilité</h3>
+<p>PH Digital s'efforce d'assurer l'exactitude des informations diffusées sur le site, mais ne saurait être tenu responsable d'erreurs, d'omissions ou des résultats obtenus suite à l'utilisation de ces informations. Les audits CRO fournis sont des analyses à visée informative et ne constituent pas un conseil stratégique garanti.</p>
+</section>
+
+<div class="legal-divider"></div>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!-- CONDITIONS GÉNÉRALES DE VENTE -->
+<!-- ══════════════════════════════════════════════════ -->
+
+<section class="legal-section" id="cgv">
+<h2>2. Conditions générales de vente (CGV)</h2>
+<p class="legal-date">Applicables à compter du 25 mars 2026</p>
+
+<h3>Article 1 — Objet</h3>
+<p>Les présentes Conditions Générales de Vente régissent la vente de services d'audit CRO (Conversion Rate Optimization) de pages web, commercialisés sous la marque <strong>PagePulse</strong> par PH Digital, entrepreneur individuel.</p>
+<p>Toute commande implique l'acceptation sans réserve des présentes CGV.</p>
+
+<h3>Article 2 — Services proposés</h3>
+<p>PagePulse propose les services suivants :</p>
+<ul>
+  <li><strong>Audit CRO unitaire</strong> — Analyse d'une page web sur 9 axes avec rapport détaillé</li>
+  <li><strong>Abonnement Pro</strong> — Accès mensuel incluant un nombre défini d'audits</li>
+  <li><strong>Abonnement Agency</strong> — Accès mensuel avec audits illimités et fonctionnalités avancées</li>
+  <li><strong>Pack de crédits</strong> — Achat ponctuel d'un nombre défini d'audits, sans engagement</li>
+</ul>
+<p>Les détails de chaque offre (contenu, prix, limites) sont décrits sur la page <strong>page-pulse.app/pricing.html</strong> au moment de la commande.</p>
+
+<h3>Article 3 — Prix et paiement</h3>
+<p>Les prix sont indiqués en euros (€) TTC. TVA non applicable (article 293 B du CGI).</p>
+<p>Le paiement est effectué en ligne par carte bancaire via la plateforme sécurisée <strong>Stripe</strong>. Le paiement est exigible immédiatement à la commande.</p>
+<p>Pour les abonnements, le paiement est prélevé automatiquement chaque mois à la date anniversaire de la souscription. Le client peut annuler son abonnement à tout moment, avec effet à la fin de la période en cours.</p>
+
+<h3>Article 4 — Livraison des audits</h3>
+<p>Les audits sont livrés par email à l'adresse communiquée lors de la commande, sous format PDF ou HTML. Le délai de livraison est de <strong>24 heures ouvrées</strong> à compter de la réception de l'URL à auditer.</p>
+<p>PH Digital s'engage à faire ses meilleurs efforts pour respecter ce délai, sans que celui-ci ne constitue une obligation de résultat.</p>
+
+<h3>Article 5 — Utilisation des crédits</h3>
+<p>Les crédits achetés (packs ou abonnements) sont valables <strong>12 mois</strong> à compter de la date d'achat. Passé ce délai, les crédits non utilisés sont perdus. Les crédits ne sont pas transférables à un tiers et ne sont pas remboursables, sauf dans le cadre de l'article 7.</p>
+
+<h3>Article 6 — Soumission des URLs</h3>
+<p>Le client soumet les URLs à auditer via le formulaire prévu à cet effet ou via les champs dédiés lors du paiement. Chaque soumission consomme 1 crédit. Le client est responsable de l'exactitude des URLs fournies.</p>
+<p>PagePulse se réserve le droit de refuser l'audit d'une page non accessible publiquement, à contenu illicite, ou nécessitant une authentification.</p>
+
+<h3>Article 7 — Droit de rétractation et garantie</h3>
+<p>Conformément à l'article L.221-18 du Code de la consommation, le client consommateur dispose d'un délai de <strong>14 jours</strong> à compter de la date d'achat pour exercer son droit de rétractation, sans avoir à justifier de motifs.</p>
+<p>De plus, PagePulse offre une garantie <strong>"Satisfait ou remboursé"</strong> de 14 jours. Si le client estime que l'audit ne correspond pas à la qualité annoncée, il peut demander un remboursement intégral en contactant contact@page-pulse.app.</p>
+<p>Le remboursement sera effectué dans un délai de 14 jours suivant la réception de la demande, via le même moyen de paiement utilisé pour la commande.</p>
+<p>Le droit de rétractation ne s'applique pas lorsque le service a été pleinement exécuté avant la fin du délai de rétractation avec l'accord exprès du client.</p>
+
+<h3>Article 8 — Responsabilité</h3>
+<p>Les audits CRO fournis par PagePulse sont des analyses à visée informative basées sur des benchmarks sectoriels publiquement disponibles. Ils ne constituent pas un conseil stratégique garanti et ne sauraient engager la responsabilité de PH Digital quant aux résultats obtenus suite à leur mise en œuvre.</p>
+<p>La responsabilité de PH Digital est limitée au montant de la commande concernée.</p>
+
+<h3>Article 9 — Résiliation</h3>
+<p>Le client peut résilier son abonnement à tout moment depuis son espace Stripe ou en contactant contact@page-pulse.app. La résiliation prend effet à la fin de la période de facturation en cours. Aucun remboursement au prorata n'est effectué pour la période entamée.</p>
+
+<h3>Article 10 — Droit applicable et litiges</h3>
+<p>Les présentes CGV sont soumises au droit français. En cas de litige, les parties s'engagent à rechercher une solution amiable. À défaut, les tribunaux compétents de Montpellier seront seuls compétents.</p>
+<p>Conformément aux dispositions du Code de la consommation relatives au règlement amiable des litiges, le client peut recourir au service de médiation : <strong>Centre de Médiation et d'Arbitrage de Paris (CMAP)</strong> — cmap.fr.</p>
+</section>
+
+<div class="legal-divider"></div>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!-- POLITIQUE DE CONFIDENTIALITÉ -->
+<!-- ══════════════════════════════════════════════════ -->
+
+<section class="legal-section" id="confidentialite">
+<h2>3. Politique de confidentialité</h2>
+<p class="legal-date">Conforme au Règlement Général sur la Protection des Données (RGPD — UE 2016/679)</p>
+
+<h3>Responsable du traitement</h3>
+<p>Le responsable du traitement des données à caractère personnel collectées sur le site PagePulse est PH Digital — Pierre Hahn, joignable à <strong>contact@page-pulse.app</strong>.</p>
+
+<h3>Données collectées</h3>
+<p>PagePulse collecte uniquement les données nécessaires à la fourniture de ses services :</p>
+<table class="legal-table">
+  <thead><tr><th>Donnée</th><th>Finalité</th><th>Base légale</th></tr></thead>
+  <tbody>
+    <tr><td>Adresse email</td><td>Livraison des audits, communication service</td><td>Exécution du contrat</td></tr>
+    <tr><td>URL(s) soumise(s)</td><td>Réalisation de l'audit CRO</td><td>Exécution du contrat</td></tr>
+    <tr><td>Secteur d'activité</td><td>Calibration des benchmarks de l'audit</td><td>Exécution du contrat</td></tr>
+    <tr><td>Données de paiement</td><td>Traitement du paiement (via Stripe)</td><td>Exécution du contrat</td></tr>
+  </tbody>
+</table>
+<p>Les données de paiement (numéro de carte bancaire) sont traitées exclusivement par <strong>Stripe</strong> et ne transitent jamais par les serveurs de PagePulse.</p>
+
+<h3>Cookies</h3>
+<p>Le site PagePulse n'utilise actuellement <strong>aucun cookie</strong> de tracking, de publicité ou d'analyse. Si des cookies techniques ou analytiques venaient à être mis en place, cette section sera mise à jour et un bandeau de consentement sera implémenté.</p>
+
+<h3>Durée de conservation</h3>
+<ul>
+  <li><strong>Données client (email, URLs)</strong> — conservées pendant la durée de la relation commerciale + 3 ans après la dernière commande</li>
+  <li><strong>Factures et données comptables</strong> — conservées 10 ans (obligation légale)</li>
+  <li><strong>Données de paiement</strong> — conservées par Stripe selon sa propre politique de conservation</li>
+</ul>
+
+<h3>Partage des données</h3>
+<p>PH Digital ne vend, ne loue et ne partage aucune donnée personnelle avec des tiers à des fins commerciales. Les données peuvent être partagées uniquement avec :</p>
+<ul>
+  <li><strong>Stripe</strong> — pour le traitement des paiements</li>
+  <li><strong>Vercel</strong> — hébergeur du site</li>
+  <li><strong>ImprovMX</strong> — pour le routage des emails</li>
+</ul>
+<p>Ces sous-traitants sont situés aux États-Unis et sont conformes aux clauses contractuelles types de la Commission européenne ou aux mécanismes de transfert appropriés (Data Privacy Framework).</p>
+
+<h3>Vos droits</h3>
+<p>Conformément au RGPD, vous disposez des droits suivants sur vos données personnelles :</p>
+<ul>
+  <li><strong>Droit d'accès</strong> — obtenir une copie de vos données</li>
+  <li><strong>Droit de rectification</strong> — corriger des données inexactes</li>
+  <li><strong>Droit à l'effacement</strong> — demander la suppression de vos données</li>
+  <li><strong>Droit à la portabilité</strong> — recevoir vos données dans un format structuré</li>
+  <li><strong>Droit d'opposition</strong> — vous opposer au traitement de vos données</li>
+  <li><strong>Droit à la limitation</strong> — restreindre le traitement de vos données</li>
+</ul>
+<p>Pour exercer ces droits, contactez-nous à <strong>contact@page-pulse.app</strong>. Nous répondons à toute demande dans un délai de 30 jours.</p>
+
+<h3>Réclamation</h3>
+<p>Si vous estimez que le traitement de vos données ne respecte pas la réglementation, vous pouvez introduire une réclamation auprès de la <strong>CNIL</strong> (Commission Nationale de l'Informatique et des Libertés) — cnil.fr.</p>
+
+<h3>Sécurité</h3>
+<p>PH Digital met en œuvre des mesures techniques et organisationnelles appropriées pour protéger les données personnelles contre tout accès, modification, divulgation ou destruction non autorisés. Le site est servi en HTTPS et les paiements sont sécurisés par Stripe (certifié PCI-DSS).</p>
+
+<h3>Modification de cette politique</h3>
+<p>PH Digital se réserve le droit de modifier la présente politique à tout moment. La date de dernière mise à jour est indiquée en haut de cette page. En cas de modification substantielle, les utilisateurs seront informés par email.</p>
+</section>
+
+</div>
+
+<footer class="footer">
+  <div style="max-width:800px;margin:0 auto;padding:0 24px;">
+    <p>&copy; 2026 PagePulse — PH Digital. Tous droits réservés.</p>
+    <p style="margin-top:8px;"><a href="index.html">Accueil</a> · <a href="pricing.html">Tarifs</a> · <a href="mailto:contact@page-pulse.app">Contact</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
