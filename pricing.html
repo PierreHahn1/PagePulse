@@ -333,7 +333,7 @@ body {
       <li><a href="index.html#how-it-works">Comment ça marche</a></li>
       <li><a href="pricing.html" style="color: var(--text-primary);">Tarifs</a></li>
     </ul>
-    <a href="https://buy.stripe.com/5kQ00c2Xg7XL4R91PG24000" class="nav-cta" target="_blank">Commencer maintenant</a>
+    <a href="https://buy.stripe.com/5kQ00c2Xg7XL4R91PG24000" class="nav-cta billing-link" data-monthly-url="https://buy.stripe.com/5kQ00c2Xg7XL4R91PG24000" data-yearly-url="https://buy.stripe.com/5kQ00c8hA1zn1EXbqg24004" target="_blank">Commencer maintenant</a>
   </div>
 </nav>
 
@@ -438,7 +438,7 @@ body {
             Support prioritaire
           </li>
         </ul>
-        <a href="https://buy.stripe.com/5kQ00c2Xg7XL4R91PG24000" class="card-btn primary" target="_blank">Démarrer mon essai Pro</a>
+        <a href="https://buy.stripe.com/5kQ00c2Xg7XL4R91PG24000" class="card-btn primary billing-link" data-monthly-url="https://buy.stripe.com/5kQ00c2Xg7XL4R91PG24000" data-yearly-url="https://buy.stripe.com/5kQ00c8hA1zn1EXbqg24004" target="_blank">Démarrer mon essai Pro</a>
       </div>
 
       <!-- AGENCY -->
@@ -478,7 +478,7 @@ body {
             Support dédié + onboarding
           </li>
         </ul>
-        <a href="https://buy.stripe.com/bJe4gs9lE0vj0ATgKA24002" class="card-btn secondary" target="_blank">Démarrer mon essai Agency</a>
+        <a href="https://buy.stripe.com/bJe4gs9lE0vj0ATgKA24002" class="card-btn secondary billing-link" data-monthly-url="https://buy.stripe.com/bJe4gs9lE0vj0ATgKA24002" data-yearly-url="https://buy.stripe.com/4gMbIUapIa5T5Vd9i824003" target="_blank">Démarrer mon essai Agency</a>
       </div>
     </div>
   </div>
@@ -638,7 +638,7 @@ body {
     <div class="cta-box fade-up">
       <h2>Votre premier audit est gratuit.</h2>
       <p>Pas de carte bancaire. Résultats en 5 minutes. Jugez par vous-même.</p>
-      <a href="https://buy.stripe.com/5kQ00c2Xg7XL4R91PG24000" class="btn-primary" style="font-size: 16px; padding: 16px 36px;" target="_blank">
+      <a href="https://buy.stripe.com/5kQ00c2Xg7XL4R91PG24000" class="btn-primary billing-link" data-monthly-url="https://buy.stripe.com/5kQ00c2Xg7XL4R91PG24000" data-yearly-url="https://buy.stripe.com/5kQ00c8hA1zn1EXbqg24004" style="font-size: 16px; padding: 16px 36px;" target="_blank">
         Créer mon compte gratuit
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -683,6 +683,9 @@ function setBilling(mode) {
   });
   document.querySelectorAll('.price-detail-dynamic').forEach(el => {
     el.textContent = isYearly ? 'Facturé annuellement' : 'Facturé mensuellement';
+  });
+  document.querySelectorAll('.billing-link').forEach(el => {
+    el.href = isYearly ? el.dataset.yearlyUrl : el.dataset.monthlyUrl;
   });
 }
 
